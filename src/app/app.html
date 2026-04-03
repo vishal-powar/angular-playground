@@ -1,0 +1,30 @@
+<header class="app-header">
+  <div class="brand">
+    <span class="logo">ProTask</span>
+    <span class="tag">NgRX Store</span>
+  </div>
+  <nav>
+    <a routerLink="/tasks" routerLinkActive="active">Tasks</a>
+  </nav>
+  <div class="auth">
+    @if (user(); as u) {
+      <span class="user">{{ u.name }}</span>
+      <button type="button" (click)="logout()">Log out</button>
+    } @else {
+      <button type="button" (click)="login()">Log in (demo)</button>
+    }
+  </div>
+</header>
+
+<section class="stats" aria-label="Project statistics">
+  @if (stats(); as s) {
+    <span>Total {{ s.totalTasks }}</span>
+    <span>Done {{ s.completedTasks }}</span>
+    <span>Open {{ s.openTasks }}</span>
+    <span>Your tasks {{ s.tasksForCurrentUser }}</span>
+  }
+</section>
+
+<main class="main">
+  <router-outlet />
+</main>
