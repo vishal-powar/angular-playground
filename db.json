@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Learn NgRX Entity adapters",
+      "status": "todo",
+      "ownerId": "demo-user",
+      "updatedAt": "2026-04-02T07:41:33.748Z"
+    },
+    {
+      "id": "2",
+      "title": "Wire Router Store selectors",
+      "status": "done",
+      "ownerId": "demo-user",
+      "updatedAt": "2026-04-02T07:40:32.625Z"
+    },
+    {
+      "id": "3",
+      "title": "Ship optimistic UI updates",
+      "status": "done",
+      "ownerId": "demo-user",
+      "updatedAt": "2026-04-02T07:40:41.266Z"
+    },
+    {
+      "id": "force-fail-delete",
+      "title": "Delete me to test rollback (API fails on purpose)",
+      "status": "todo",
+      "ownerId": "demo-user",
+      "updatedAt": "2026-04-01T10:15:00.000Z"
+    }
+  ]
+}
